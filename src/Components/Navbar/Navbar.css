@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    padding: 0%;
+}
+
+.nav{
+    background:transparent; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+Box{
+    position: fixed;
+    
+}
+List{
+    width:70%;
+
+
+}
+
+@font-face {
+    font-family: Montserrat;
+    src:url("../../assets/Fonts/Montserrat-Bold.ttf");
+  }
