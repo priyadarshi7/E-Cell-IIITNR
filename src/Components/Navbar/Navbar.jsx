@@ -18,7 +18,7 @@ import "./Navbar.css"
 const drawerWidth = 240;
 const navItems = ['Home', 'About','Event', 'E-Summit','Gallery'];
 
-function DrawerAppBar(props) {
+function Navbar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
  const [backgroundColor, setBackgroundColor] = React.useState("transparent");
@@ -50,7 +50,7 @@ function DrawerAppBar(props) {
     <div className='nav' sx={{ background:'transparent' }}>
     <Box sx={{ display: 'flex'}}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ background:'blue',border:'none'
+      <AppBar component="nav" sx={{ background:'transparent',border:'none'
         ,height: "8vh",
         display: {xs:'none',sm:'flex',
           justifyContent: "center"},
@@ -116,8 +116,8 @@ function DrawerAppBar(props) {
   );
 }
 
-DrawerAppBar.propTypes = {
+Navbar.propTypes = {
   window: PropTypes.func,
 };
 
-export default DrawerAppBar;
+export default Navbar;
