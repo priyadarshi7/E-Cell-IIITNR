@@ -58,9 +58,9 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Box sx={{ display: { xs: 'none', sm: 'flex', justifyContent: "space-evenly",alignItems:"center"},margin:"auto",borderWidth:'0.07rem',borderStyle:'solid',borderColor:"#93B7FF", background:"#1D0A00",borderRadius: "1.7rem",width:"46%",height:"65%",fontWeight:"700"}}>
+          <Box sx={{ display: { xs: 'none', sm: 'flex', justifyContent: "space-evenly",alignItems:"center"},margin:"auto",borderWidth:'0.07rem',borderStyle:'solid',borderColor:"#93B7FF", background:"#1D0A00",borderRadius: "1.7rem",fontWeight:"700"}}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "white",fontFamily:"Montserrat",fontSize:"0.8vw"}}>
+              <Button key={item} sx={{ color: "white",fontFamily:"Montserrat"}}>
                 {item}
               </Button>
             ))}
