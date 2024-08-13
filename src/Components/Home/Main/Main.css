@@ -1,0 +1,26 @@
+.main-content{
+    height:100svh;
+}
+
+.main-box{
+    height:100%;
+    display: flex;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.main-head h1{
+    background: linear-gradient(89.28deg, #0057FF -1.17%, #FFFFFF 97.89%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 200px;
+    font-weight: 800;
+}
+
