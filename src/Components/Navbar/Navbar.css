@@ -1,0 +1,27 @@
+*{
+ 
+    box-sizing: border-box;
+    font-family: "Montserrat";
+  
+}
+
+.contact{
+    border-radius: 1.7rem;
+    border-style:solid;
+    border-color: #095DFF;
+    border-width: 0.07rem;
+    font-family: Montserrat;
+    font-size: 1vw;
+    width:10vw;
+    text-align: center;
+    height:5.8vh;
+   
+    color:  #095DFF;
+    font-weight: 900;
+    padding-top: 1vh;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src:url("../../assets/Fonts/Montserrat-SemiBold.ttf");
+  }
