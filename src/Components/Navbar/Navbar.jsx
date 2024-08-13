@@ -46,8 +46,7 @@ function DrawerAppBar(props) {
 
   return (
     <Box sx={{ display: 'flex'}}>
-      <CssBaseline />
-      <AppBar component="nav" sx={{background:'transparent',height: "8vh", boxShadow: "0",display:'flex'}} >
+      <AppBar component="nav" sx={{background:'transparent', boxShadow: "0",display:'flex'}} >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -58,13 +57,13 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Box sx={{ display: { xs: 'none', sm: 'flex', justifyContent: "space-evenly",alignItems:"center"},margin:"auto",borderWidth:'0.07rem',borderStyle:'solid',borderColor:"#93B7FF", background:"#1D0A00",borderRadius: "1.7rem",width:"46%",height:"65%",fontWeight:"700"}}>
+          <Box sx={{ display: { xs: 'none', sm: 'flex', justifyContent: "space-evenly",alignItems:"center"},margin:"auto",borderWidth:'0.07rem',borderStyle:'solid',borderColor:"#93B7FF", background:"#1D0A00",borderRadius: "1.7rem",fontWeight:"500",padding:'1vh',marginTop:"3vh"}}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "white",fontFamily:"Montserrat",fontSize:"0.8vw"}}>
+              <Button key={item} sx={{ color: "white",fontFamily:"Montserrat"}}>
                 {item}
               </Button>
             ))}
-            <div className="contact">Contact Us</div>
+            <div className="contact"><div>Contact Us</div></div>
           </Box>
         </Toolbar>
       </AppBar>
@@ -85,9 +84,9 @@ function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
+      {/* <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-      </Box>
+      </Box> */}
     </Box>
   );
 }
