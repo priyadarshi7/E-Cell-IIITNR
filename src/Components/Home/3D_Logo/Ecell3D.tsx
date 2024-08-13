@@ -37,7 +37,7 @@ export default function App() {
       width={600}
       scale={0.1}
       entropy={40}
-      maxParticles={8000}
+      maxParticles={4000}
       particleOptions={particleOptions}
       mouseMoveForce={motionForce}
       touchMoveForce={motionForce}
