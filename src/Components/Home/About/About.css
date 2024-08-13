@@ -10,7 +10,6 @@
 
 .about{
     height:100svh;
-    background-color: #111111;
     display: flex;
     flex-direction: column;
     align-items: center;

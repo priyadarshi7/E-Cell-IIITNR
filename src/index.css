@@ -1,12 +1,19 @@
+@font-face {
+  font-family: Mont;
+  src: url('./assets/Fonts/Montserrat-VariableFont_wght.ttf');
+}
 *{
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Mont;
 }
 
 body{
   min-height: 100svh;
   background-color: #111111;
+  background-image: url('./assets/Images/BG/E-Cell_BG.png');
+  background-size: cover;
 }
 
 a{
