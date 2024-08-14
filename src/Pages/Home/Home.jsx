@@ -7,7 +7,7 @@ import Main from '../../Components/Home/Main/Main'
 const Home = () => {
   return (
     <div className="home">
-        {/* <Main/> */}
+        <Main/>
         <About/>
     </div>
   )
