@@ -34,7 +34,7 @@ export default function App() {
   return (
     <ParticleImage
       src={"/EcellLogo3D.png"}
-      width={600}
+    //   width={600}
       scale={0.1}
       entropy={40}
       maxParticles={8000}
