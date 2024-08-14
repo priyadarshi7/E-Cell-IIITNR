@@ -48,15 +48,19 @@ function DrawerAppBar(props) {
     <Box sx={{ display: 'flex'}}>
       <AppBar component="nav" sx={{background:'transparent', boxShadow: "0",display:'flex'}} >
         <Toolbar>
+          <div className="icon">
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
+            anchor="right"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: 'none' } ,color:'#0803FF',fontSize:'3.6rem',paddingTop:'5.5vh',borderRadius:'6rem'}}
           >
-            <MenuIcon />
+            <MenuIcon fontSize='inherit'
+            borderRadius='inherit'/>
           </IconButton>
+          </div>
           <Box sx={{ display: { xs: 'none', sm: 'flex', justifyContent: "space-evenly",alignItems:"center"},margin:"auto",borderWidth:'0.07rem',borderStyle:'solid',borderColor:"#93B7FF", background:"#1D0A00",borderRadius: "1.7rem",fontWeight:"500",padding:'1vh',marginTop:"3vh"}}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: "white",fontFamily:"Montserrat"}}>
@@ -73,12 +77,14 @@ function DrawerAppBar(props) {
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
+          anchor="right"
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: false, // Better open performance on mobile.
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth,
+            },background :'#0803FF'
           }}
         >
           {drawer}
