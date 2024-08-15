@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './Pages/Home/Home'
 import Navbar from './Components/Navbar/Navbar.jsx'
+import Load from './Components/Load_Page/Load.jsx';
 import ScrollToTop from "react-scroll-to-top";
 
 const App = () => {
@@ -11,11 +12,22 @@ const App = () => {
     width:"40px"
    }
 
+   const [loading,setLoading] = React.useState(true);
+
+   React.useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(false);
+    },6000)
+   },[loading])
+
   return (
     <div className="main">
-      <Navbar />
+     {loading===true && <Load/>}
+     {loading===false && <div>
+      <Navbar/>
       <Home/>
       <ScrollToTop className="scroll-top" smooth={true} color="#0803FF" viewBox="0 0 49 72" svgPath={d} style={scrollStyle}/>
+     </div>}
     </div>
   )
 }
