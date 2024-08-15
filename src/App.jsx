@@ -23,11 +23,11 @@ const App = () => {
   return (
     <div className="main">
      {loading===true && <Load/>}
-      <div>
+      {loading===false && <div>
       <Navbar/>
       <Home/>
       <ScrollToTop className="scroll-top" smooth={true} color="#0803FF" viewBox="0 0 49 72" svgPath={d} style={scrollStyle}/>
-     </div>
+     </div>}
     </div>
   )
 }
