@@ -1,10 +1,12 @@
 import React from 'react'
 import './About.css'
 import Cover_Image from '../../../assets/Images/Cover_Images/About-Cover-Image.jpeg'
+import AboutUs  from '../About_Us/AboutUs'
 
 const About = () => {
   return (
     <div className="about">
+      <AboutUs/>
         <div className="box">
             <div className="sub-box">
                 <h1>WHO ARE WE ?</h1>

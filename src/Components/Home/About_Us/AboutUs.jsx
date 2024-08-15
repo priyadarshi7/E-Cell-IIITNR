@@ -1,6 +1,7 @@
 import React from 'react'
+import './AboutUs.css'
 
-export const AboutUs = () => {
+const AboutUs = () => {
   return (
     <div className="about-us">
            <div className="box2">
@@ -10,3 +11,5 @@ export const AboutUs = () => {
     </div>
   )
 }
+
+export default AboutUs
