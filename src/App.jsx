@@ -17,17 +17,17 @@ const App = () => {
    React.useEffect(()=>{
     setTimeout(()=>{
       setLoading(false);
-    },6000)
+    },4000)
    },[loading])
 
   return (
     <div className="main">
      {loading===true && <Load/>}
-     {loading===false && <div>
+      <div>
       <Navbar/>
       <Home/>
       <ScrollToTop className="scroll-top" smooth={true} color="#0803FF" viewBox="0 0 49 72" svgPath={d} style={scrollStyle}/>
-     </div>}
+     </div>
     </div>
   )
 }

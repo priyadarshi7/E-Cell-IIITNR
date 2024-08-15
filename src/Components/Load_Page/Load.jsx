@@ -35,9 +35,9 @@ const Load = () => {
   color="white" 
 ></l-dot-pulse>
         </div>
-        <div className="counter">
+        {/* <div className="counter">
                 {count}%
-        </div>
+        </div> */}
         </div>
     );
 };
