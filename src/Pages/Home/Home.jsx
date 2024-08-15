@@ -5,12 +5,14 @@ import Main from '../../Components/Home/Main/Main'
 import OurEvents from '../../Components/Our Events/OurEvents'
 
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div className="home">
         <Main/>
+        {props.loading===false && <div>
         <About/>
         <OurEvents/>
+        </div>}
     </div>
   )
 }

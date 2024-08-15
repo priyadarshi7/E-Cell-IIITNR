@@ -23,11 +23,9 @@ const App = () => {
   return (
     <div className="main">
      {loading===true && <Load/>}
-      {loading===false && <div>
       <Navbar/>
-      <Home/>
+      <Home loading={loading}/>
       <ScrollToTop className="scroll-top" smooth={true} color="#0803FF" viewBox="0 0 49 72" svgPath={d} style={scrollStyle}/>
-     </div>}
     </div>
   )
 }
