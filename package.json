@@ -15,14 +15,18 @@
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
     "@rooks/use-window-size": "^4.11.2",
-    "ldrs": "^1.0.2",
     "bootstrap": "^5.3.3",
+    "ldrs": "^1.0.2",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
+    "react-material-ui-carousel": "^3.4.2",
     "react-particle-image": "^1.0.2",
+    "react-responsive-3d-carousel": "^1.4.4",
     "react-scroll-to-top": "^3.0.0",
-    "saas": "^1.0.0"
+    "react-slick": "^0.30.2",
+    "saas": "^1.0.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
