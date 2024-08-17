@@ -1,7 +1,7 @@
 .loading{
     position: absolute;
     height: 100svh;
-    width:99vw;
+    width: 100%;
     background-color: black;
     z-index: 1300;
     display: flex;

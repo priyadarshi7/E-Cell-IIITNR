@@ -85,7 +85,8 @@
 
 @media (max-width:630px) {
     .box h3{
-        font-size: large;
+        font-size: 13px;
+        line-height: 19.78px;
     }
 
     .sub-box h1{
