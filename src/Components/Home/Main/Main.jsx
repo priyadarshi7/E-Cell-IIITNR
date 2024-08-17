@@ -7,7 +7,7 @@ import LOGOMobile from "../3D_Logo_Mobile/3DMobile"
 const Main = () => {
   return (
     <div>
-    <div className="main-content">
+    <div className="main-content" id="homePage">
       <img src={Grid_img} alt="" style={{position:'absolute',width:'100%',bottom:"0", height:"60svh"}}/>
       <div className="main-text">
         <div className="content-text">

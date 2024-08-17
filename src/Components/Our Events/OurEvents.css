@@ -1,6 +1,8 @@
 .our-eve-main {
     height: 100svh;
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
+    /* margin-bottom: 25rem; */
+    padding-bottom: 0;
 }
 
 .oureve-heading {

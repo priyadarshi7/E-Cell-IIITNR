@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import { blue } from '@mui/material/colors';
+import ContactUs from "../Contact Us/ContactUs.jsx"
 
 const OurEvents = () => {
   return (
@@ -18,16 +19,16 @@ const OurEvents = () => {
       {/* <div className="bulb-img">
       </div> */}
       <div className="oureve-cards">
-        {/* <Grid container spacing={1}> */}
+        <Grid container spacing={1}>
           {events.map((event) => (
-            // <Grid 
-            //   item 
-            //   xs={12}    // 1 card per row on extra-small screens
-            //   sm={12}     // 2 cards per row on small screens
-            //   md={6}     // 3 cards per row on medium screens
-            //   lg={4}     // 4 cards per row on large screens
-            //   key={event.key}
-            // >
+            <Grid 
+              item 
+              xs={12}    // 1 card per row on extra-small screens
+              sm={12}     // 2 cards per row on small screens
+              md={6}     // 3 cards per row on medium screens
+              lg={4}     // 4 cards per row on large screens
+              key={event.key}
+            >
               <Card sx={{ maxWidth: 345 }}>
                   <CardMedia
                     component="img"
@@ -45,15 +46,15 @@ const OurEvents = () => {
                     </Typography>
                   </CardContent>
               </Card>
-            // </Grid>
+             </Grid>
           ))}
-        {/* </Grid> */}
+        </Grid>
       </div>
       <div className="img-cont">
       <div className="bulb-img"></div>
       <div className="side-img"></div>
       </div>
-      
+      <ContactUs></ContactUs>
     </div>
   );
 };

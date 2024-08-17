@@ -1,0 +1,41 @@
+.contact-cont {
+    height: 40svh;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.contact-section {
+    width: 25rem;
+    /* background-color: white; */
+    /* color: ; */
+    padding-top: 4%;
+}
+
+/* ul li {
+    margin-bottom: 3%;
+    color: rgba(255, 255, 255, 0.7);
+} */
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
