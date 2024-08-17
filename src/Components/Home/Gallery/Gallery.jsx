@@ -62,7 +62,7 @@ const Gallery = () => {
             <div className='boxed'   style={{ 
                 boxSizing:'border-box',
                 width: '100%', 
-                padding:'1rem',
+                padding:'0.7rem',
                 height: '16rem',
                 boxSizing:'border-box',
               }}>
