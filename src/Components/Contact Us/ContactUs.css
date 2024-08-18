@@ -40,9 +40,6 @@
         flex-direction: column;
         height: 90svh;
         margin-bottom: 0;
-        justify-content: center;
-        gap: 1rem;
-
     }
 }
 
