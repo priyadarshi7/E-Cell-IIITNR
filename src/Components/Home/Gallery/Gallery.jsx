@@ -65,7 +65,7 @@ const Gallery = () => {
                 height: '16rem',
               }}>
             <img 
-              src={image} 
+              src={image.img} 
               alt={`Slide ${index}`}
               
               style={{ 
