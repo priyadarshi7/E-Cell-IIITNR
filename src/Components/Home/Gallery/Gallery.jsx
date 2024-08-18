@@ -17,6 +17,10 @@ import images from "../../../assets/Data/GalleryImages.jsx"
 const Gallery = () => {
 
   const settings = {
+    infinite:true,
+    easing:'linear',
+    autoplaySpeed:1500,
+    autoplay:true,
     dots: true,
     infinite: true,
     speed: 500,
