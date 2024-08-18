@@ -67,7 +67,7 @@ const Gallery = () => {
                 boxSizing:'border-box',
               }}>
             <img 
-              src={image} 
+              src={image.img} 
               alt={`Slide ${index}`}
               
               style={{ 
