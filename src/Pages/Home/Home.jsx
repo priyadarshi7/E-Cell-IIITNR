@@ -3,9 +3,6 @@ import './Home.css'
 import About from '../../Components/Home/About/About'
 import Main from '../../Components/Home/Main/Main'
 import OurEvents from '../../Components/Our Events/OurEvents'
-// import Gallery from "../../Components/Gallery/Gallery.jsx";
-import ContactUs from '../../Components/Contact-Us/ContactUs'
-
 import Gallery from '../../Components/Home/Gallery/Gallery'
 
 const Home = (props) => {

@@ -80,6 +80,11 @@
     padding: 0.6rem 1.3rem;
     margin-top: 3vh;
     margin-bottom: 3vh;
+    cursor: pointer;
+}
+.box button:hover{
+    transform: scale(1.1);
+    background-color: #010f29;
 }
 
 
