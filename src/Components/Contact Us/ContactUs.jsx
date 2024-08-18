@@ -27,13 +27,6 @@ const ContactUs = () => {
         </div>
         <div className="quick-section contact-section">
             <h1 style={{marginBottom: "4%", fontWeight:"600"}}>Quick Links</h1>
-            {/* <ul style={{listStyle: "none"}}>
-                <li><a href="#homePage">Home</a></li>
-                <li><a href="#aboutUsPage">About Us</a></li>
-                <li>Events</li>
-                <li>E-Summit</li>
-                <li>Gallery</li>
-            </ul> */}
             <div className="links">
                 <div className="link">
                 <ArrowForwardIcon sx={{color: "aqua", fontSize:"1.5rem"}}/>

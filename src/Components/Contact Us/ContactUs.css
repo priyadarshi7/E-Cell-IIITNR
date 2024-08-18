@@ -4,19 +4,14 @@
     display: flex;
     color: white;
     justify-content: space-around;
+    padding-right: 5vh;
 }
 
 .contact-section {
     width: 25rem;
-    /* background-color: white; */
-    /* color: ; */
     padding-top: 4%;
+    margin-left: 9vh;
 }
-
-/* ul li {
-    margin-bottom: 3%;
-    color: rgba(255, 255, 255, 0.7);
-} */
 
 .contact-info {
     display: flex;
@@ -38,4 +33,32 @@
 .link {
     display: flex;
     align-items: center;
+}
+
+@media (max-width:930px) {
+    .contact-cont {
+        flex-direction: column;
+        height: 90svh;
+        margin-bottom: 0;
+        justify-content: center;
+        gap: 1rem;
+
+    }
+}
+
+@media (max-width:610px) {
+
+    .ecell-section p {
+        font-size: 0.9rem;
+    }
+
+    .contact-section h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:475px) {
+    .contact-section {
+        width: 75svw;
+    }
 }

@@ -11,7 +11,7 @@ const Home = (props) => {
         <Main/>
         {props.loading===false && <div>
         <About/>
-        <Gallery/>
+        {/* <Gallery/> */}
         <OurEvents/>        
         </div>
          }
