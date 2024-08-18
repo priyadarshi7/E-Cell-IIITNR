@@ -17,8 +17,10 @@ import images from "../../../assets/Data/GalleryImages.jsx"
 const Gallery = () => {
 
   const settings = {
+    autoplaySpeed:1500,
+    autoplay:true,
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
