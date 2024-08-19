@@ -9,7 +9,7 @@ export default function TeamMain(){
             <div className="team">
                 {
                     TeamData.map((data,index)=>{
-                        return <TeamMember name={data.name} designation={data.designation} linkedIn={data.linkedIn} image={data.img}ckey={index}/>
+                        return <TeamMember name={data.name} designation={data.designation} linkedIn={data.linkedIn} image={data.img} key={index}/>
                     })
                 }
             </div>

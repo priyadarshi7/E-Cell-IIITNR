@@ -16,7 +16,7 @@ AOS.init({
 });
 const OurEvents = () => {
   return (
-    <div className='our-eve-main'>
+    <div className='our-eve-main' id="event">
       <div className="oureve-heading" data-aos="zoom-in" data-aos-duration="300">
         <h1>OUR EVENTS</h1>
       </div>

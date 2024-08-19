@@ -10,7 +10,7 @@ AOS.init({
 });
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <AboutUs/>
         <div className="box">
             <div className="sub-box" data-aos="zoom-in"

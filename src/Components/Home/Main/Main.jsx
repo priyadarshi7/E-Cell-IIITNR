@@ -4,11 +4,11 @@ import Grid_img from '../../../assets/Images/BG/Grid.png'
 import LOGO from '../3D_Logo/Ecell3D';
 import LOGOMobile from "../3D_Logo_Mobile/3DMobile"
 
-const Main = () => {
+const Main = (props) => {
   return (
     <div>
     <div className="main-content" id="homePage">
-      {/* <img src={Grid_img} alt="" style={{position:'absolute',width:'100%',bottom:"0", height:"60svh"}}/> */}
+      <img src={Grid_img} alt="" style={{position:'absolute',width:'100%',bottom:"0", height:"60svh"}}/>
       <div className="main-text">
         <div className="content-text">
           <div className="main-head">E-CELL</div>

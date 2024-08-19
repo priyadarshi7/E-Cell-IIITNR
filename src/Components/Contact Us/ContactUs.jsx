@@ -10,14 +10,14 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const ContactUs = () => {
   return (
-    <div className='contact-cont'>
+    <div className='contact-cont' id="contact">
         <div className="ecell-section contact-section">
             <h1 style={{marginBottom: "4%", fontWeight:"600"}}>E-Cell</h1>
             <p style={{color: "rgba(255 ,255, 255, 0.7)",}}>The most import thing in communication is to hear what isn't beign said. So come connect with us and share your reviews and ideas.</p>
             <div className="socials">
                 <br></br>
-                <FacebookRoundedIcon sx={{color: "aqua", fontSize:"1.8rem"}}/>
-                &nbsp;
+                {/* <FacebookRoundedIcon sx={{color: "aqua", fontSize:"1.8rem"}}/>
+                &nbsp; */}
                 <XIcon sx={{color: "aqua", fontSize:"1.8rem"}}/>
                 &nbsp;
                 <InstagramIcon sx={{color: "aqua", fontSize:"1.8rem"}}/>
@@ -45,7 +45,7 @@ const ContactUs = () => {
                 <div className="link">
                 <ArrowForwardIcon sx={{color: "aqua", fontSize:"1.5rem"}}/>
                 &nbsp;
-                E-Summit
+                Team
                 </div>
                 <div className="link">
                 <ArrowForwardIcon sx={{color: "aqua", fontSize:"1.5rem"}}/>
@@ -58,7 +58,7 @@ const ContactUs = () => {
             <h1 style={{marginBottom: "3%"}}>Contact Info</h1>
             <div className="contacts">
                 <div className="contact-info"><LocationOnIcon sx={{color: "aqua"}}/>&nbsp;&nbsp;IIIT Naya Raipur, Chattisgarh</div>
-                <div className="contact-info"><LocalPhoneIcon sx={{color: "aqua"}}/>&nbsp;&nbsp;+91 79876 65370</div>
+                {/* <div className="contact-info"><LocalPhoneIcon sx={{color: "aqua"}}/>&nbsp;&nbsp;+91 79876 65370</div> */}
                 <div className="contact-info"><MailIcon sx={{color: "aqua"}}/>&nbsp;&nbsp;Ecell@Iiitnr.Edu.In</div>
             </div>
         </div>

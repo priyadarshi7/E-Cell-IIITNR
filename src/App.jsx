@@ -18,10 +18,21 @@ const App = () => {
    const [loading,setLoading] = React.useState(true);
 
    React.useEffect(()=>{
-    setTimeout(()=>{
+    document.body.style.overflow = 'hidden';
+    const timer4 = setTimeout(()=>{
+      document.body.style.overflow = 'visible';
       setLoading(false);
-    },4000)
+    },3000)
+    return () => clearTimeout(timer4);
    },[loading]);
+
+   React.useState(()=>{
+    document.body.style.overflow = 'hidden';
+    const timer3 = setTimeout(()=>{
+        document.body.style.overflow = 'visible';
+    },500)
+    return () => clearTimeout(timer3);
+},[])
 
   return (
     <div className="main">

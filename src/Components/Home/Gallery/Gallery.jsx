@@ -27,7 +27,6 @@ const Gallery = () => {
     autoplaySpeed:1500,
     autoplay:true,
     dots: true,
-    infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -62,7 +61,7 @@ const Gallery = () => {
   ;
 
   return (
-    <div className='Slider'>
+    <div className='Slider' id="gallery">
       <div className='text' data-aos="zoom-in" data-aos-duration="300"><div className='heading' >OUR GALLERY</div></div>
     <div data-aos="zoom-in" data-aos-duration="300"style={{ width: '86vw', margin: '0 auto'  }}  >
       <Slider {...settings}>

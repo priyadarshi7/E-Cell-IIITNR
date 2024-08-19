@@ -16,6 +16,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import "./Navbar.css"
+import { NavLink } from 'react-router-dom';
 const drawerWidth = 240;
 const navItems = ['Home', 'About','Event', 'E-Summit','Gallery'];
 
@@ -62,12 +63,19 @@ function DrawerAppBar(props) {
           </IconButton>
           </div>
           <Box sx={{ display: { xs: 'none', sm: 'flex', justifyContent: "space-evenly",alignItems:"center"},margin:"auto",borderWidth:'0.07rem',borderStyle:'solid',borderColor:"#93B7FF", background:"#1D0A00",borderRadius: "1.7rem",fontWeight:"500",padding:'1vh',marginTop:"3vh"}}>
-            {navItems.map((item) => (
+            {/* {navItems.map((item) => (
               <Button key={item} sx={{ color: "white",fontFamily:"Montserrat"}}>
                 {item}
               </Button>
-            ))}
-            <div className="contact"><div>Contact Us</div></div>
+            ))} */}
+            <ul style={{display:'flex', justifyContent:"space-around", listStyle:"none", gap:"1.5vh", margin:"1vh"}} className='nav-list'>
+              <a href="#homePage"><li>Home</li></a>
+              <a href="#about"><li>About</li></a>
+              <a href="#event"><li>Event</li></a>
+              <NavLink to="/team"><li>Team</li></NavLink>
+              <a href="#gallery"><li>Gallery</li></a>
+            </ul>
+            <a href="#contact"><div className="contact"><div>Contact Us</div></div></a>
           </Box>
         </Toolbar>
       </AppBar>
