@@ -21,12 +21,11 @@ const App = () => {
     setTimeout(()=>{
       setLoading(false);
     },4000)
-   },[loading])
+   },[loading]);
 
   return (
     <div className="main">
      {loading===true && <Load/>}
-      <Navbar/>
       <Routes>
         <Route path="/" element={<Home loading={loading}/>}/>
         <Route path="/team" element={<Team/>}/>

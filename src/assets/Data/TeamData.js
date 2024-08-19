@@ -159,7 +159,7 @@ const TeamData = [
         img: Anshumaan,
         name: "Anshumaan Karna",
         designation: "Social Media",
-        linkedIn: "www.linkedin.com/in/anshumaankarna"
+        linkedIn: "https://www.linkedin.com/in/anshumaankarna"
     },
     {
         img: Aditya_Raj,

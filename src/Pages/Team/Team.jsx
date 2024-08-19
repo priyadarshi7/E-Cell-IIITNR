@@ -3,6 +3,7 @@ import Home from "../Home/Home"
 import TeamHome from "../../Components/Team/Team_Home/TeamHome"
 import TeamMain from "../../Components/Team/TeamMain/TeamMain"
 import Load from "../../Components/Load_Page/Load"
+import Navbar from "../../Components/Navbar/Navbar"
 
 export default function Team(){
 
@@ -15,11 +16,9 @@ export default function Team(){
     return(
         <div className="team">
             {load===true && <Load/>}
-            <div>
+            {load===false && <Navbar/>}
             <TeamHome/>
-
             {load===false && <TeamMain/>}
-            </div>
         </div>
     )
 }
