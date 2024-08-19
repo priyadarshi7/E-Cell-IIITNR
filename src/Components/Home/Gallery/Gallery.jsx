@@ -14,6 +14,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Gallery.css";
 import images from "../../../assets/Data/GalleryImages.jsx"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+  once: true
+});
 const Gallery = () => {
 
   const settings = {
@@ -58,8 +63,8 @@ const Gallery = () => {
 
   return (
     <div className='Slider'>
-      <div className='text'><div className='heading'>OUR GALLERY</div></div>
-    <div style={{ width: '86vw', margin: '0 auto'  }}  >
+      <div className='text' data-aos="zoom-in" data-aos-duration="300"><div className='heading' >OUR GALLERY</div></div>
+    <div data-aos="zoom-in" data-aos-duration="300"style={{ width: '86vw', margin: '0 auto'  }}  >
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}   >
