@@ -9,16 +9,20 @@ import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import { blue } from '@mui/material/colors';
 import ContactUs from "../Contact Us/ContactUs.jsx"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+  once: true
+});
 const OurEvents = () => {
   return (
     <div className='our-eve-main'>
-      <div className="oureve-heading">
+      <div className="oureve-heading" data-aos="zoom-in" data-aos-duration="300">
         <h1>OUR EVENTS</h1>
       </div>
-      <div className="oureve-cards">
+      <div className="oureve-cards" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="150">
           {events.map((event) => (
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 345 }} key={event.key}>
                   <CardMedia
                     component="img"
                     height="140"
@@ -39,7 +43,6 @@ const OurEvents = () => {
       </div>
       <div className="img-cont">
       <div className="bulb-img"></div>
-      <div className="side-img"></div>
       </div>
       <ContactUs></ContactUs>
     </div>

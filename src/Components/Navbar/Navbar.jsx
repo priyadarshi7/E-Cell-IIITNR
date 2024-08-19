@@ -57,8 +57,8 @@ function DrawerAppBar(props) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } ,color:'#0803FF',fontSize:'3.6rem',paddingTop:'5.5vh',borderRadius:'6rem'}}
           >
-            <MenuIcon fontSize='inherit'
-            borderRadius='inherit'/>
+            <MenuIcon sx={{fontSize:'inherit',
+            borderRadius:'inherit'}}/>
           </IconButton>
           </div>
           <Box sx={{ display: { xs: 'none', sm: 'flex', justifyContent: "space-evenly",alignItems:"center"},margin:"auto",borderWidth:'0.07rem',borderStyle:'solid',borderColor:"#93B7FF", background:"#1D0A00",borderRadius: "1.7rem",fontWeight:"500",padding:'1vh',marginTop:"3vh"}}>
