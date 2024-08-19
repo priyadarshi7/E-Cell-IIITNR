@@ -18,7 +18,7 @@ const OurEvents = () => {
       </div>
       <div className="oureve-cards">
           {events.map((event) => (
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 345 }} key={event.key}>
                   <CardMedia
                     component="img"
                     height="140"
@@ -39,7 +39,6 @@ const OurEvents = () => {
       </div>
       <div className="img-cont">
       <div className="bulb-img"></div>
-      <div className="side-img"></div>
       </div>
       <ContactUs></ContactUs>
     </div>
