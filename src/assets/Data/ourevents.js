@@ -11,7 +11,7 @@ let events = [
     { key: 3, title: "Keynote Session", details: "Inspiring keynote speaker session, where industry insights and innovative ideas will shape your future success!", img: keynoteImg },
     { key: 4, title: "IIC Orientation", details: "State wise Orientation Meeting-cum-Q&A session for IIC members of Madhya Pradesh and Chhattisgarh.", img: iicImg },
     { key: 5, title: "Disrupt", details: "A platform where you compete in teams to pitch your ideas and sell the products that are given to you on spot", img: disruptImg },
-    { key: 6, title: "Berlin's Battlefield", details: "An interactive online simulation game that replicates business operations, allowing users to resolve conflicts and make decisions in a risk-free environment.", img: berlinImg }
+    { key: 6, title: "Berlin's Battlefield", details: "An interactive online simulation game that mimics business operations, letting users make decisions.", img: berlinImg }
 ];
 
 export default events;
