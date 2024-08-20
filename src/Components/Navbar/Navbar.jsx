@@ -16,7 +16,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import "./Navbar.css"
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const drawerWidth = 240;
 const navItems = ['Home', 'About','Event', 'E-Summit','Gallery'];
 
@@ -32,13 +32,18 @@ function DrawerAppBar(props) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Divider />
       <List>
-        {navItems.map((item) => (
+        {/* {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
-        ))}
+        ))} */}
+        <ListItem><ListItemButton href="#homePage">Home</ListItemButton></ListItem>
+        <ListItem><ListItemButton href="#about">About</ListItemButton></ListItem>
+        <ListItem><ListItemButton href="#event">Event</ListItemButton></ListItem>
+        <Link to="/team"><ListItem><ListItemButton>Team</ListItemButton></ListItem></Link>
+        <ListItem><ListItemButton href="#gallery">Gallery</ListItemButton></ListItem>
       </List>
     </Box>
   );
@@ -92,7 +97,7 @@ function DrawerAppBar(props) {
           sx={{
             display: { xs: 'block', sm: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth,
-            },background :'#0803FF'
+            }
           }}
         >
           {drawer}

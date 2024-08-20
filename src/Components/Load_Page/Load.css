@@ -1,6 +1,6 @@
 .loading{
     position: absolute;
-    height: 100svh;
+    height: 100%;
     width: 100%;
     background-color: black;
     z-index: 1500;
