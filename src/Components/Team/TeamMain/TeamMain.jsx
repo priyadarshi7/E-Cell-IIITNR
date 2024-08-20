@@ -2,6 +2,7 @@ import React from "react"
 import './TeamMain.css'
 import TeamMember from "../TeamMember/TeamMember"
 import TeamData from "../../../assets/Data/TeamData"
+import { Link } from "react-router-dom"
 
 export default function TeamMain(){
     return(
@@ -13,6 +14,7 @@ export default function TeamMain(){
                     })
                 }
             </div>
+           <Link to="/"><div className="back">Back to Home</div></Link>
         </div>
     )
 }

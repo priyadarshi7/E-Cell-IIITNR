@@ -4,7 +4,7 @@ import Grid_img from '../../../assets/Images/BG/Grid.png'
 import LOGO from '../3D_Logo/Ecell3D';
 import LOGOMobile from "../3D_Logo_Mobile/3DMobile"
 
-const Main = (props) => {
+const Main = () => {
   return (
     <div>
     <div className="main-content" id="homePage">

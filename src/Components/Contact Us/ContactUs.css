@@ -17,6 +17,11 @@
 .contact-info {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.contact-info:hover{
+    text-decoration: underline;
 }
 
 .contacts {

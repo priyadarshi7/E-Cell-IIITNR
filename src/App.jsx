@@ -15,30 +15,29 @@ const App = () => {
     width:"40px"
    }
 
-   const [loading,setLoading] = React.useState(true);
+//    const [loading,setLoading] = React.useState(true);
 
-   React.useEffect(()=>{
-    document.body.style.overflow = 'hidden';
-    const timer4 = setTimeout(()=>{
-      document.body.style.overflow = 'visible';
-      setLoading(false);
-    },3000)
-    return () => clearTimeout(timer4);
-   },[loading]);
+//    React.useEffect(()=>{
+//     document.body.style.overflow = 'hidden';
+//     const timer4 = setTimeout(()=>{
+//       document.body.style.overflow = 'visible';
+//       setLoading(false);
+//     },3000)
+//     return () => clearTimeout(timer4);
+//    },[loading]);
 
-   React.useState(()=>{
-    document.body.style.overflow = 'hidden';
-    const timer3 = setTimeout(()=>{
-        document.body.style.overflow = 'visible';
-    },500)
-    return () => clearTimeout(timer3);
-},[])
+//    React.useState(()=>{
+//     document.body.style.overflow = 'hidden';
+//     const timer3 = setTimeout(()=>{
+//         document.body.style.overflow = 'visible';
+//     },500)
+//     return () => clearTimeout(timer3);
+// },[])
 
   return (
     <div className="main">
-     {loading===true && <Load/>}
       <Routes>
-        <Route path="/" element={<Home loading={loading}/>}/>
+        <Route path="/" element={<Home />}/>
         <Route path="/team" element={<Team/>}/>
       </Routes>
       <ScrollToTop className="scroll-top" smooth={true} color="#0803FF" viewBox="0 0 49 72" svgPath={d} style={scrollStyle}/>

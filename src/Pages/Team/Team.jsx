@@ -26,7 +26,7 @@ export default function Team(){
     },[])
     return(
         <div className="team">
-           <Link to="/"><div className="back">&lt;</div></Link> 
+           {/* <Link to="/"><div className="back">&lt;</div></Link>  */}
             {load===true && <Load/>}
             {/* {load===false && <Navbar/>} */}
             <TeamHome/>
