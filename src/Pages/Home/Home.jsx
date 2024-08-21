@@ -36,7 +36,7 @@ const Home = () => {
     <div className="home">
       {load && <Load />}
       {!load && <Navbar />}
-      {!load && <Main />}
+      <Main load={load}/>
       {!load && <About />}
       {!load && <Gallery />}
       {!load && <OurEvents />}

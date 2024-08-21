@@ -14,7 +14,6 @@ export default function TeamMain(){
                     })
                 }
             </div>
-           <Link to="/"><div className="back">Back to Home</div></Link>
         </div>
     )
 }

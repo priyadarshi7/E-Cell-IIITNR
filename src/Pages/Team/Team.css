@@ -2,8 +2,16 @@
     position: fixed;
     width:40px;
     height:40px;
-    color: white;
-    margin: 2vh;
+    margin: 10px;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.back svg{
+    position: fixed;
+    width:40px;
+    height:40px;
+    margin: 10px;
     font-size: 5rem;
     cursor: pointer;
 }

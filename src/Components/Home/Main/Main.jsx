@@ -8,7 +8,7 @@ const Main = (props) => {
   return (
     <div>
     <div className="main-content" id="homePage">
-      <img src={Grid_img} alt="" style={{position:'absolute',width:'100%',bottom:"0", height:"60svh"}}/>
+      {props.load===false && <img src={Grid_img} alt="" style={{position:'absolute',width:'100%',bottom:"0", height:"60svh"}}/>}
       <div className="main-text">
         <div className="content-text">
           <div className="main-head">E-CELL</div>
@@ -31,7 +31,7 @@ const Main = (props) => {
           <div className="sub-small-text-mobile">us in shaping tomorrow's innovations!</div>
         </div>
     </div>
-    <div className="explore-main">
+    {props.load===false && <div className="explore-main">
         <div className="explore">
           <h3>EXPLORE</h3>
           <svg width="40" height="40" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@ const Main = (props) => {
 <path d="M8.04641 8.33708C8.17316 8.44126 8.33214 8.49821 8.49621 8.49821C8.66027 8.49821 8.81925 8.44126 8.946 8.33708L13.196 4.91583C13.2688 4.85737 13.3293 4.78511 13.374 4.7032C13.4188 4.6213 13.4469 4.53135 13.4567 4.43854C13.4666 4.34573 13.4581 4.25188 13.4315 4.16239C13.405 4.0729 13.3611 3.98953 13.3022 3.91708C13.2438 3.84431 13.1715 3.78382 13.0896 3.73907C13.0077 3.69432 12.9178 3.6662 12.825 3.65633C12.7321 3.64645 12.6383 3.65502 12.5488 3.68153C12.4593 3.70805 12.376 3.75199 12.3035 3.81083L8.49975 6.87791L4.70308 3.70458C4.55843 3.58434 4.37194 3.5265 4.18463 3.54377C3.99733 3.56104 3.82456 3.65201 3.70433 3.79666C3.5841 3.94131 3.52626 4.1278 3.54352 4.3151C3.56079 4.50241 3.65176 4.67518 3.79641 4.79541L8.04641 8.33708Z" fill="#3C7EFF"/>
 </svg>
         </div>
-        </div>
+        </div>}
     </div>
   );
 };
