@@ -6,6 +6,10 @@
   font-family: Optimus;
   src: url('./assets/E-Summit/Fonts/OptimusPrinceps.ttf');
 }
+@font-face {
+  font-family: esummit;
+  src: url('./assets/E-Summit/Fonts/HARRYP__.TTF');
+}
 *{
   margin:0;
   padding: 0;
