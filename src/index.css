@@ -2,6 +2,10 @@
   font-family: Mont;
   src: url('./assets/Fonts/Montserrat-VariableFont_wght.ttf');
 }
+@font-face {
+  font-family: Optimus;
+  src: url('./assets/E-Summit/Fonts/OptimusPrinceps.ttf');
+}
 *{
   margin:0;
   padding: 0;

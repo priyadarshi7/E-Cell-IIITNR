@@ -7,6 +7,7 @@ import Team from './Pages/Team/Team.jsx';
 
 import Gallery from './Components/Home/Gallery/Gallery'
 import { Route, Routes } from 'react-router-dom';
+import ESummitHome from './Pages/E-Summit/Home/ESummitHome.jsx';
 const App = () => {
 
 
@@ -34,6 +35,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/team" element={<Team/>}/>
+        <Route path="/esummit" element={<ESummitHome/>}/>
       </Routes>
     </div>
   )
