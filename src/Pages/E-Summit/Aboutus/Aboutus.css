@@ -1,0 +1,84 @@
+.Aboutus {
+    background-color: #160402;
+    width: 100%;
+    padding: 20px 0; /* Add padding for better spacing */
+  }
+  
+  @font-face {
+    font-family: Font;
+    src: url("../../../assets/E-Summit/Fonts/OptimusPrinceps.ttf");
+  }
+  
+  #writings {
+    font-family: Font;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 600px; /* Restrict maximum width */
+    width: 90%; /* Make it flexible for smaller screens */
+    margin: 0 auto; /* Center the text horizontally */
+  }
+  
+  .Aboutus_box2 {
+    display: flex;
+    justify-content: center; /* Center content initially */
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 20px;
+    background-image: url("../../../assets/Images/Mask group.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover for better scaling */
+    padding: 30px;
+    margin: 30px auto; /* Center the box */
+    max-width: 1100px; 
+/* Restrict maximum width */
+
+  }
+  
+  .aboutus_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .title {
+    width: 80%; /* Adjust width for responsiveness */
+    max-width: 300px; /* Restrict the maximum width */
+  }
+  
+  @media (max-width: 768px) {
+    #writings {
+      font-size: 1.2rem; /* Smaller font size for smaller screens */
+    }
+  
+    .Aboutus_box2 {
+      flex-direction: column; /* Stack content vertically */
+      padding: 20px;
+      margin: 20px auto;
+      background-size: contain; /* Adjust background for smaller screens */
+    }
+  
+    .title {
+      width: 90%; /* Adjust title size */
+      max-width: 250px; /* Restrict maximum width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #writings {
+      font-size: 1rem; /* Further reduce font size */
+    }
+  
+    .Aboutus_box2 {
+      padding: 15px;
+      margin: 15px auto;
+    }
+  
+    .title {
+      width: 100%; /* Make title fully responsive */
+      max-width: 200px; /* Restrict maximum width */
+    }
+  }
+  
