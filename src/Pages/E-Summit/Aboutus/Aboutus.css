@@ -1,14 +1,20 @@
 .Aboutus {
     background-color: #160402;
     width: 100%;
-    padding: 20px 0; /* Add padding for better spacing */
+    padding: 100px 0; /* Add padding for better spacing */
+    flex:1;
   }
   
   @font-face {
     font-family: Font;
     src: url("../../../assets/E-Summit/Fonts/OptimusPrinceps.ttf");
   }
-  
+  .about-us{
+    background-color:#160402 ;
+    width: 100%;
+    margin-bottom: 0;
+ 
+  }
   #writings {
     font-family: Font;
     color: #ffffff;
@@ -46,6 +52,7 @@
   .title {
     width: 80%; /* Adjust width for responsiveness */
     max-width: 300px; /* Restrict the maximum width */
+    position: absolute;
   }
   
   @media (max-width: 768px) {
@@ -65,7 +72,9 @@
       max-width: 250px; /* Restrict maximum width */
     }
   }
-  
+  .Aboutus_0{
+    height: 100%;
+  }
   @media (max-width: 480px) {
     #writings {
       font-size: 1rem; /* Further reduce font size */

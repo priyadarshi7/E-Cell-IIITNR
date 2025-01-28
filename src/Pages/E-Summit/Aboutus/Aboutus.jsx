@@ -4,11 +4,14 @@ import title from "../../../assets/Images/aboutus_title.png";
 
 export default function Aboutus() {
   return (
-    <div className="Aboutus">
-      <div className="Aboutus_0">
-        <div className="aboutus_box">
+    <div className="about-us">
+       <div className="aboutus_box">
           <img src={title} className="title" alt="About Us Title" />
         </div>
+    <div className="Aboutus">
+     
+      <div className="Aboutus_0">
+        
         <div className="Aboutus_box2">
           <p id="writings">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -22,6 +25,7 @@ export default function Aboutus() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }
