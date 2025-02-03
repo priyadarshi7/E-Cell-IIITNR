@@ -84,7 +84,7 @@ const Past_events_esummit = () => {
   };
 
   return (
-    <div className="events_esummit">
+    <div className="events_esummit" id="epastspeakers">
       <div className="esummit_Slider" id="gallery">
         <div className="text" data-aos="zoom-in" data-aos-duration="300">
           <div className="heading_events">

@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { NavLink } from 'react-router-dom';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
@@ -33,13 +34,41 @@ function Navbar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
+          <ListItem disablePadding>
+            <NavLink to="/"><ListItemButton sx={{ textAlign: 'center', fontFamily: 'Optimus' }}>
+              <ListItemText primary="E-Cell" />
+            </ListItemButton></NavLink>
           </ListItem>
-        ))}
+
+          <ListItem disablePadding>
+            <a href="#esummitaboutus"><ListItemButton sx={{ textAlign: 'center', fontFamily: 'Optimus' }}>
+              <ListItemText primary="About Us" />
+            </ListItemButton></a>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <a href="#esummitevents"><ListItemButton sx={{ textAlign: 'center', fontFamily: 'Optimus' }}>
+              <ListItemText primary="Events"/>
+            </ListItemButton></a>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <a href="#epastspeakers"><ListItemButton sx={{ textAlign: 'center', fontFamily: 'Optimus'}}>
+              <ListItemText primary="Past Speakers" />
+            </ListItemButton></a>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <NavLink to="/team"><ListItemButton sx={{ textAlign: 'center', fontFamily: 'Optimus' }}>
+              <ListItemText primary="Team" />
+            </ListItemButton></NavLink>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <a href="https://unstop.com/college-fests/e-summit-2025-international-institute-of-information-technology-iiit-naya-raipur-307942"><ListItemButton sx={{ textAlign: 'center', fontFamily: 'Optimus' }}>
+              <ListItemText primary="Register" />
+            </ListItemButton></a>
+          </ListItem>
       </List>
     </Box>
   );
@@ -68,14 +97,12 @@ function Navbar(props) {
             <MenuIcon />
           </IconButton>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, margin: 'auto' }}>
-            <Button sx={navStyle}>E-Cell</Button>
-            <Button sx={navStyle}>Home</Button>
-            <Button sx={navStyle}>About Us</Button>
-            <Button sx={navStyle}>Events</Button>
-            <Button sx={navStyle}>Past Speakers</Button>
-            <Button sx={navStyle}>FAQs</Button>
-            <Button sx={navStyle}>Team</Button>
-            <Button sx={navStyle}>Register</Button>
+            <NavLink to="/"><Button sx={navStyle}>E-Cell</Button></NavLink>
+            <a href="#esummitaboutus"><Button sx={navStyle}>About Us</Button></a>
+            <a href="#esummitevents"><Button sx={navStyle}>Events</Button></a>
+            <a href="#epastspeakers"><Button sx={navStyle}>Past Speakers</Button></a>
+            <NavLink to="/team"><Button sx={navStyle}>Team</Button></NavLink>
+            <a href="https://unstop.com/college-fests/e-summit-2025-international-institute-of-information-technology-iiit-naya-raipur-307942"><Button sx={navStyle}>Register</Button></a>
           </Box>
         </Toolbar>
       </AppBar>

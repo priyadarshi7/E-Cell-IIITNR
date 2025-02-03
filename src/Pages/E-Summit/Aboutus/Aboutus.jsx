@@ -4,7 +4,7 @@ import title from "../../../assets/Images/aboutus_title.png";
 
 export default function Aboutus() {
   return (
-    <div className="about-us">
+    <div className="e-about-us" id="esummitaboutus">
        <div className="aboutus_box">
           <img src={title} className="title" alt="About Us Title" />
         </div>
