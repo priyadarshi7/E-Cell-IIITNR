@@ -65,7 +65,7 @@ function Navbar(props) {
           </ListItem>
 
           <ListItem disablePadding>
-            <a href="https://unstop.com/college-fests/e-summit-2025-international-institute-of-information-technology-iiit-naya-raipur-307942"><ListItemButton sx={{ textAlign: 'center', fontFamily: 'Optimus' }}>
+            <a href="https://unstop.com/college-fests/e-summit-2025-international-institute-of-information-technology-iiit-naya-raipur-307942" target="_main"><ListItemButton sx={{ textAlign: 'center', fontFamily: 'Optimus' }}>
               <ListItemText primary="Register" />
             </ListItemButton></a>
           </ListItem>
@@ -102,7 +102,7 @@ function Navbar(props) {
             <a href="#esummitevents"><Button sx={navStyle}>Events</Button></a>
             <a href="#epastspeakers"><Button sx={navStyle}>Past Speakers</Button></a>
             <NavLink to="/team"><Button sx={navStyle}>Team</Button></NavLink>
-            <a href="https://unstop.com/college-fests/e-summit-2025-international-institute-of-information-technology-iiit-naya-raipur-307942"><Button sx={navStyle}>Register</Button></a>
+            <a target="_main" href="https://unstop.com/college-fests/e-summit-2025-international-institute-of-information-technology-iiit-naya-raipur-307942"><Button sx={navStyle}>Register</Button></a>
           </Box>
         </Toolbar>
       </AppBar>
