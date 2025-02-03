@@ -10,10 +10,10 @@ border: none;
 width: 80%; /* Adjust width for responsiveness */
 max-width: 300px; /* Restrict the maximum width */
 }
-.videoTag{
-object-fit: cover;
-width: 100%;
 
+video{
+  object-fit: fill;
+  width: 100%;
 }
 .Glimpse{
     background-color: #160402;

@@ -2,7 +2,7 @@ import React from "react"
 import "./Glimpse.css"
 import Navbar from "../../../Components/E-Summit/Navbar/Navbar"
 import HeroSection from "../../../Components/E-Summit/Home/HeroSection"
-import sample from '../../../assets/E-Summit/glimpse.mp4';
+import sample from '../../../assets/E-Summit/finalesummitreel.mp4';
 import glimpse_pic from "../../../assets/E-Summit/glimpse.png"
 export default function Glimpse(){
   return(

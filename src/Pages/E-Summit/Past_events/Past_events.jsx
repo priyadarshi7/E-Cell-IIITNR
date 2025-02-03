@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Past_events.css";
-import images from "../../../assets/Data/Events_esummit_gallery";
+import images from "../../../assets/Data/past_speakers_gallery";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import image_heading from "../../../assets/Images/BG/events_title.png";
@@ -99,8 +99,9 @@ const Past_events_esummit = () => {
                   className="boxed"
                   style={{
                     boxSizing: "border-box",
-                    padding: "1rem",
-                    height: "27rem",
+                    padding: "2rem",
+                
+                  
                   }}
                 >
                   <img
@@ -109,9 +110,11 @@ const Past_events_esummit = () => {
                     style={{
                       boxSizing: "border-box",
                       width: "100%",
-                      borderRadius: "0.1rem",
+                      borderRadius: "0.3rem",
                       height: "100%",
-                      objectFit: "contain",
+                      objectFit: "fill",
+                      border:"5px solid #C9C186",
+                      boxShadow: "0 0 10px white"
                     }}
                   />
  

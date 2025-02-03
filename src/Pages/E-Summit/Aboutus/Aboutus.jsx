@@ -14,14 +14,11 @@ export default function Aboutus() {
         
         <div className="Aboutus_box2">
           <p id="writings">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            facilisis, risus at vehicula dapibus, odio nulla volutpat nunc, non
-            tempus metus elit eu velit. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Nulla venenatis nisl ipsum, tempor
-            sollicitudin magna commodo vitae. Pellentesque commodo finibus
-            venenatis. Phasellus quis lacus tellus. Etiam in leo accumsan,
-            tincidunt sem sit amet, imperdiet velit. Integer vitae blandit quam,
-            ac tincidunt metus. In hac habitasse platea dictumst.
+          E-Summit 2025, the flagship event of E-Cell IIIT-NR, where the captivating magic of Hogwarts meets the ingenuity of entrepreneurship. It aims to foster entrepreneurial spirits with its magical and innovative activities. Our objective is to inspire, empower, and equip individuals with the knowledge, skills, and platform to transform innovative ideas into successful ventures and cultivating a network of innovative leaders.
+
+Get ready to wield the wand of innovation, and brew potions of success to showcase your innovation, talents, and creativity through various games. The magical theme sets the stage for transforming dreams into reality.
+
+Let the entrepreneurship sorcery commence !!
           </p>
         </div>
       </div>
