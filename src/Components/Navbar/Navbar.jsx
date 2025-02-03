@@ -42,6 +42,7 @@ function DrawerAppBar(props) {
         <ListItem><ListItemButton href="#homePage">Home</ListItemButton></ListItem>
         <ListItem><ListItemButton href="#about">About</ListItemButton></ListItem>
         <ListItem><ListItemButton href="#event">Event</ListItemButton></ListItem>
+        <Link to="/esummit"><ListItem><ListItemButton>E-Summit</ListItemButton></ListItem></Link>
         <Link to="/team"><ListItem><ListItemButton>Team</ListItemButton></ListItem></Link>
         <ListItem><ListItemButton href="#gallery">Gallery</ListItemButton></ListItem>
       </List>
@@ -77,6 +78,7 @@ function DrawerAppBar(props) {
               <a href="#homePage"><li>Home</li></a>
               <a href="#about"><li>About</li></a>
               <a href="#event"><li>Event</li></a>
+              <NavLink to="/esummit"><li>E-Summit</li></NavLink>
               <NavLink to="/team"><li>Team</li></NavLink>
               <a href="#gallery"><li>Gallery</li></a>
             </ul>
