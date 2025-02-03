@@ -98,7 +98,7 @@ const Events_esummit = () => {
                   className="boxed"
                   style={{
                     boxSizing: "border-box",
-                    padding: "2rem",
+                    padding: "2rem" ,
                 
                  
                   }}
